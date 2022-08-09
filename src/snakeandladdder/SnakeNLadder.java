@@ -10,15 +10,15 @@ public class SnakeNLadder {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Snake And ladder");
 		System.out.println("Current Position: " + POSITION);
+		 while (POSITION!=100) {
 		int dieNumber = dieRoll();
 		start(dieNumber);
 		System.out.println("Die Number is : " + dieNumber);
 		System.out.println("Current Position: " + POSITION);
 	}
-
+	}
 	private static void start(int dieNumber) {
 		int option = (int) (Math.random() * 10) % 3;
-		System.out.println(option);
 		switch (option) {
 		case IS_LADDER:
 			System.out.println("You got ladder");
