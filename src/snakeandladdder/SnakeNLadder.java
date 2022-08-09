@@ -5,6 +5,6 @@ public class SnakeNLadder {
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to Snake And ladder");
-		System.out.println("Current Position : " + POSITION);
+		System.out.println("Current Position: " + POSITION);
 	}
 }
