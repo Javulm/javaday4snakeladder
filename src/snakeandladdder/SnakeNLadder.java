@@ -22,11 +22,14 @@ public class SnakeNLadder {
 		switch (option) {
 		case IS_LADDER:
 			System.out.println("You got ladder");
+			if (POSITION+dieNumber<=100)
 			POSITION += dieNumber;
 			break;
 		case IS_SNAKE:
 			System.out.println("you got snake");
 			POSITION -= dieNumber;
+			if (POSITION<0)
+                POSITION =0;
 			break;
 		case NO_PLAY:
 			System.out.println("No Play");
